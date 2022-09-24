@@ -5,7 +5,7 @@
 
 1. [Python](https://www.python.org/downloads/)
 2. [Pandas](https://pandas.pydata.org/getting_started.html)
-3. [Apache Tika](https://tika.apache.org/download.html)
+3. [PyPDF2](https://pypi.org/project/PyPDF2/)
 
 ### Instructions
 
