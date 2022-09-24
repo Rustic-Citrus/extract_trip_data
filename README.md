@@ -29,10 +29,6 @@ Firstly, the Uber receipts I have been working with are in Portuguese, as they h
 
 Secondly, it is likely that, at some point, Uber will change the format of its receipts. If, or when, this happens, it may cause the lines that use the string find method to select unprecedented portions of the string.
 
-### Future Development
-
-The use of a variable called num_strings_list seems like a clumsy way to determine whether the strings found in the PDF are numbers. Ideally, all of that would be done on one line of code, within the if statement.
-
 ### Applicability
 
 If you have to extract data from PDFs routinely, and you'd like to use Python as a way of automating your work, this script may give you some ideas on how (or how not) to do that. Naturally, if you also use Uber and want to automate the process of extracting data from your receipts, then, with a little tweaking, this script could work well for you.

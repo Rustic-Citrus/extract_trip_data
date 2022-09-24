@@ -6,7 +6,6 @@ import pandas as pd
 totals = []
 dates = []
 times = []
-num_strings_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 for file in glob.glob("./*.pdf"):
     pdf = PdfReader(file) # parsing the pdf
@@ -15,7 +14,7 @@ for file in glob.glob("./*.pdf"):
     total = total.replace(",", ".") # replacing decimal commas with points
     total = float(total) # converting totals from strings into floats
     totals.append(total)
-    if txt[(txt.find("2022")) - 6] in num_strings_list: # finding the dates and times
+    if txt[(txt.find("2022")) - 6] in str(range(0,10)): # finding the dates and times
         datetime_object = datetime.strptime(
             txt[(txt.find("2022") - 6):(txt.find("2022") + 10)].strip(),
             "%d/%m/%Y %H:%M"
