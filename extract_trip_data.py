@@ -9,8 +9,8 @@ times = []
 num_strings_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 for file in glob.glob("./*.pdf"):
-    pdf = PdfReader(file)
-    txt = pdf.pages[0].extract_text()
+    pdf = PdfReader(file) # parsing the pdf
+    txt = pdf.pages[0].extract_text() # extracting text from pdf
     total = txt[(txt.find("Total") + 9):(txt.find("Total") + 14)] # finding the total values
     total = total.replace(",", ".") # replacing decimal commas with points
     total = float(total) # converting totals from strings into floats
